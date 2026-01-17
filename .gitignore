@@ -1,0 +1,17 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Maven
+target/
+**/target/
+mvnw
+mvnw.cmd
+.mvn/wrapper/maven-wrapper.properties
+
+# Mac OS (se mai qualcuno userà Mac)
+.DS_Store
+
+# Logs
+*.log
