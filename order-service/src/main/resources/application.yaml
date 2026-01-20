@@ -4,9 +4,9 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/ecommerce_db
-    username: admin
-    password: password
+    url: jdbc:postgresql://localhost:5433/ecommerce_db
+    username: mario
+    password: start
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
