@@ -1,15 +1,13 @@
-version: '3.8'
-
 services:
   # --- Relational Database (PostgreSQL) ---
   postgres:
     image: postgres:16-alpine
     container_name: ecommerce-postgres
     ports:
-      - "5432:5432"
+      - "5433:5432" # <--- CAMBIATO: La porta sinistra (Windows) è ora 5433
     environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=mario
+      - POSTGRES_PASSWORD=start
       - POSTGRES_DB=ecommerce_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
