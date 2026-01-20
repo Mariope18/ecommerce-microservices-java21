@@ -17,7 +17,7 @@ services:
     image: mongo:7.0
     container_name: ecommerce-mongo
     ports:
-      - "27017:27017"
+      - "27018:27017" # <--- CAMBIATO: 27018 su Windows, 27017 nel container
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=password
